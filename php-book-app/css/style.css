@@ -1,0 +1,168 @@
+body {
+    margin: 0;
+    font-family: "Noto Sans JP", sans-serif;
+    color: black;
+}
+
+header {
+    height: 3.5rem;
+    background-color: orangered;
+}
+
+nav {
+    max-width: 960px;
+    margin: 0 auto;
+    line-height: 3.5rem;
+}
+
+a {
+    transition: 0.3s;
+}
+
+nav a {
+    color: #fafafa;
+    text-decoration: none;
+    margin-left: 0.75rem;
+    
+}
+
+nav a:hovor {
+    text-decoration: none;
+}
+
+main {
+    text-align: center;
+    max-width: 960;
+    margin: 0 auto;
+}
+
+.home {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 7rem);
+    padding: 1.75rem 0.75rem 2.75rem;
+}
+
+.home h1 {
+    margin: 0;
+    font-size: 3rem;
+}
+
+.home p {
+    margin-bottom: 4.5rem;
+    font-size: 1.25rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    color: #111;
+    text-decoration: none;
+    background-color: #eac300;
+    border-radius: 4px;
+    box-shadow: 1px 2px 4px rgb(0 0 0 / 15%);
+}
+
+footer {
+    height: 3.5rem;
+    background-color: #fafafa;
+}
+
+.copyright {
+    margin: 0;
+    font-size: 0.875rem;
+    line-height: 3.5rem;
+    color: #555;
+    text-align: center;
+}
+/*read.php*/
+
+.books {
+    box-sizing: border-box;
+    min-height: calc(100vh - 7rem);
+    padding: 1.75rem;
+}
+
+.books h1 {
+    margin: 0 0 1.75rem;
+    font-size: 1.75rem;
+}
+
+.books-ui {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 0 0 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.books-ui div {
+    display: flex;
+    align-items: flex-end;
+}
+
+@media(max-width: 959px) {
+    .books-ui {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .books-ui div {
+        margin-bottom: 1.5rem;
+    }
+}
+
+.sort-img{
+    height: 1.75rem;
+    vertical-align: top;
+}
+
+.search-form {
+    margin-left: 0.75rem;
+}
+
+.search-box {
+    box-sizing: border-box;
+    max-width: 300px;
+    height: 1.75rem;
+    padding: 0.25rem 0.5rem;
+    background: #eee;
+    border: none;
+    outline: 0;
+}
+
+.books-table {
+    width: 100%;
+    margin: 0 auto;
+    word-break: break-all;
+    border-collapse: collapse;
+}
+
+.books-table tr {
+    border-bottom: solid 1px #d9d9d9;
+}
+
+.books-table tr:first-child{
+    border-bottom: solid 3px #d9d9d9;
+}
+
+.books th, .books-table td {
+    padding: 1rem 0.75rem 1rem 0;
+    text-align: center;
+}
+
+.books-table th:first-child, .books-table td:first-child {
+    padding: 1rem 0.75rem;
+    text-align: center;
+}
+.success {
+    color: #28a745;
+}
+
+.edit-icon, .delete-icon  {
+    height: 1.5rem;
+    vertical-align: top;
+}
